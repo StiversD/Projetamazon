@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+  background-color: black;
+}
+    film {
+    }
+  .Amazon {
+    	background-color: black !important;
+        }
+ .navigation {
+ 		background-color: black;
+   		}
+.text {
+		color: white !important;
+        }
+    @keyframes modificationCouleur {
+	0% {background-color: rgb(0, 0, 0);}
+    20% {background-color: rgb(204, 204, 204);}
+    40% {background-color: rgb(41, 41, 41);}
+    60% {background-color: gray;}
+    80% {background-color: rgb(37, 37, 37);}
+    100% {background-color: white;}
+  </style>
+  
+ <nav class="navbar navbar-inverse navbar-fixed-top Amazon">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="#">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="Logo" style="width:100px;"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://www.primevideo.com/ref=atv_nb_sf_hm" target="_blank">Accueil</a></li>
+      <li><a href="https://www.primevideo.com/storefront/ref=nav_shopall_aiv_vid?merchId=RentBuy&ie=UTF8" target="_blank">Boutique</a></li>
+      <li><a href="https://www.pro.com/storefront/channels/ref=atv_nb_sf_ch" target="_blank">Chaînes</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle text" data-toggle="dropdown" href="#">Catégories
+        <span class="caret text"></span></a>
+        <ul class="dropdown-menu navigation">
+          <li><a href="https://www.primevideo.com/storefront/tv/ref=atv_tc_tv" target="_blank">Séries</a></li>
+          <li><a href="https://www.primevideo.com/storefront/movie/ref=atv_tc_m" target="_blank">Films</a></li>
+          <li><a href="https://www.primevideo.com/storefront/kids/ref=atv_tc_kids" target="_blank">Enfants</a></li>
+          <li><a href="https://www.primevideo.com/storefront/ref=atv_tc_prime?filterId=OFFER_FILTER%3DPRIME" target="_blank">Inclus sur amazon Prime</a></li>
+          <li><a href="https://www.primevideo.com/storefront/ref=atv_tc_originals?merchId=Originals" target="_blank">Programmes Amazon Original</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#formu">Essayez gratuitement</button>
+     </ul>
+  </div>
+</nav>
+<br><br><br>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+  
+
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://m.media-amazon.com/images/S/sonata-images-prod/FR_Hero_American_Gods_S3_Launch/31aa48ac-ad28-478c-bcab-9d49a8f82c5a._UR3000,600_SX3000_FMwebp_.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/FR_Hero_Greys_Anatomy_S1to14_Evergreen_V2/9d02c84f-2da5-4d76-9116-f21da1243545._UR3000,600_SX3000_FMwebp_.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/GB_3P_Superhero_STARZPLAY_The_Act/8515f244-7129-4628-9d7e-90b9baf6a9fb._UR3000,600_SX3000_FMwebp_.jpg" alt="New York">
+    </div>
+    
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/FR_Hero_The_Handmaids_Tale_S3_Evergreen/02e7b6a8-7337-4bc5-9c18-ac2b22aa735d._UR3000,600_SX3000_FMwebp_.jpg" alt="Chicago">
+    </div>
+    
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/S/sonata-images-prod/TVOD_FR_Hero_Greenland_VOD/baf005ba-eee4-4f86-bf8d-9d64a6336390._UR3000,600_SX3000_FMwebp_.jpg" alt="New York">
+    </div>
+    
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/G/01/digital/video/sonata/FR_TVOD_SH_SonicTH_VOD/2275ae80-1768-4c2a-8140-1c8bcfbaa8e5._UR3000,600_SX3000_FMwebp_.jpg" alt="New York">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<div class="container">
+	<div class="row">
+    <div class="col-lg-12">
+    	<p style="color: white;">ACHETER OU LOUER film populaires voir plus</a></p>
+    </div>
+    	<div id="film" class="col-lg-3" onmouseover="evenementCapture2(this)" onmouseout="evenementStop2(this)">
+            
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/9ca6bedec83f62a28b8315c82d8cf74df293ca4e091b3b6ba29a3337aa935fae._UR1920,1080_RI_UX400_UY225_.jpg" width="100%" data-toggle="modal" data-target="#euphoria" >
+        </div> 
+        <div id="film" class="col-lg-3" onmouseover="evenementCapture2(this)" onmouseout="evenementStop2(this)">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/94fcf033dfdb3d99ca1f1ac9cb67bc6d7d103e9da8750ea170417501a788a525._UR1920,1080_RI_UX400_UY225_.jpg" width="100%" data-toggle="modal" data-target="#terminator" >
+            </input>
+        </div>
+        <div id="film" class="col-lg-3" onmouseover="evenementCapture2(this)" onmouseout="evenementStop2(this)">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/83eb01e9eda9722baf6fe1b1b5887fc2a439378c0505b240aaeaa675972b77dc._UR1920,1080_RI_UX400_UY225_.jpg" width="100%" data-toggle="modal" data-target="#GoT">
+            </input>
+        </div>
+        <div id="film" class="col-lg-3" onmouseover="evenementCapture2(this)" onmouseout="evenementStop2(this)">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/b3a31e3e4fe303243895d72a0073acdba4e67a0a63d661f170e8a8c7b344ae33._UR1920,1080_RI_UX400_UY225_.jpg" width="100%" data-toggle="modal" data-target="#fab">
+            <br><br>
+            </input>
+        </div>
+        
+
+
+        <div class="col-lg-12">
+        <p style="color: white;">ACHETER OU LOUER Selection de films en promotions</p>
+    </div>
+    	<div class="col-lg-3">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/aeab14b781433e55fd39c797e0e852f4cd1eb3a774b710f80a5597a5e8617a42._UR1920,1080_RI_UX400_UY225_.jpg" width=100% data-toggle="modal" data-target="#magic">
+        </div>
+        <div class="col-lg-3">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/255ca06e4eefd212d27cc5967f2cab8414b4af027fd113638bb1b3aad9f4eef3._UR300,300_BL99_UR400,225_CLs%7C400,225%7C/255ca06e4eefd212d27cc5967f2cab8414b4af027fd113638bb1b3aad9f4eef3.jpg%7C0,0,400,225+0,0,400,225_.jpg" width=100% data-toggle="modal" data-target="#call" >
+        </div>
+        <div class="col-lg-3">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/1b0ccb68ec60c530526619e7c6df4299fbb82c297fcb68cbfd636db040079b10._UR1920,1080_RI_UX400_UY225_.png" width=100% data-toggle="modal" data-target="#Scary">
+        </div>
+        <div class="col-lg-3">
+        	<input type="image" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f54f678fafb42901853d872b1c4bbee9fcfb27fbb6c1ae317358baf98259d0fe._UR1920,1080_RI_UX400_UY225_.jpg" width=100% data-toggle="modal" data-target="#bay" ><br><br><br>
+        </div>
+        
+        <div class="col-xs-12">
+        
+        <form action="">
+  <div class="form-group formulaire">
+    <input type="text" class="form-control" id="email" >
+  </div>
+ <div class="form-group">
+  <input type="text" class="form-control" id="email" >
+  </div>
+  <div class="form-group">
+    <input type="tel" class="form-control" id="tel">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="password">
+  </div>
+</form>
+</div>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Envoyer</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Envoyer</h4>
+      </div>
+      <div class="modal-body">
+        <p>Bien reçu!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br><br>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal -->
+  <div class="modal fade" id="euphoria" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Euphoria</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+Produite par Drake, Euphoria suit les tumultes de lycéens qui naviguent entre alcool, sexe, drogue et quête identitaire <br>
+Genres	Drame<br>
+Sous-titres:	Français<br>
+Audio:	Français, English.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="terminator" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Terminator Genesys</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+
+            Lorsque John Connor renvoie Kyle Reese en 1984 pour protéger Sarah Connor, des événements inattendus modifient le passé et menacent l'avenir de l'humanité. Chargé d'une nouvelle mission, Reese tente de sauver le monde avec Sarah et son protecteur.<br>
+Réalisateurs	Alan Taylor<br>
+Acteurs principaux	Byung-Hun Lee, Matthew Smith, J.K. Simmons<br>
+Genres	Action, Aventure<br>
+Sous-titres	:
+Français (France)
+, 
+العربية
+, 
+Dansk, Deutsch, English, English [CC], <br>Audio :	
+Français (France)
+, 
+Deutsch
+<br>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="GoT" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Game of Thrones</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+Dans le royaume des Sept Couronnes les familles s'unissent et s'affrontent afin de garder ou reconquérir le Trône de fer.<br>
+Acteurs principaux:	Lena Headey, Sean Bean, Peter Dinklage<br>
+Genres:	Drame<br>
+Sous-titres:	Français<br>
+Audio:	Français, English</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="fab" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Fabrice Eboue: Plus rien a perdre</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          
+Fabrice Eboué se lâche comme jamais, et plus encore ! Une façon d’annoncer un stand up au propos sans équivoque « Rions de tout ! ». Toujours plus impertinent et corrosif, Fabrice Éboué prouve ici qu'il n'a effectivement « plus rien à perdre ». S’il s’en donne à cœur joie sur les véganes, les complotistes, ou son couple mixte c’est surtout de lui- même qu’il préfère rire !<br>
+Réalisateurs:	Marc-Antoine Hélard<br>
+Acteurs principaux:	Fabrice Eboué<br>
+Genres:	Comédie<br>
+Sous-titres:	Français [CC]<br>
+Audio:	Français<br>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="magic" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Magic Mike XXL</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          
+Trois ans après son adieu aux planches alors qu’il était au sommet de la gloire, Mike et les Kings of Tampa prennent la route pour Myrtle Beach et un dernier spectacle à tout casser.<br>
+Réalisateurs:	Gregory Jacobs<br>
+Acteurs principaux:	Channing Tatum, Matt Bomer, Joe Manganiello<br>
+Genres:	Drame, Comédie<br>
+Sous-titres:    Français [CC], English [CC]
+<br>
+Audio:	Français (France), English
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="call" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">The Call</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+Une adolescente est kidnappée par un tueur en série. Pour la sauver, une opératrice d'un centre d'appel d'urgences va affronter ses propres peurs liées à une tragédie de son passé. Leur seul lien : un téléphone portable. Une course contre la montre commence... Chaque appel pourrait bien être le dernier.<br>
+Réalisateurs:	Brad Anderson<br>
+Acteurs principaux:	Halle Berry, Abigail Breslin, Morris Chestnut<br>
+Genres:	Drame<br>
+Sous-titres:	Français<br>
+Audio:	Français<br>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="Scary" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Scary Movie</h4>
+        </div>
+        <div class="modal-body">
+          <p>Un soir, une jeune fille reçoit un appel anonyme d'un maniaque. Traquée dans sa maison, puis dans son jardin, elle finit par être tuée. Sa mort plonge ses camarades de lycée en plein cauchemar, d'autant qu'ils doivent désormais faire face à un tueur en série, caché parmi eux.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="bay" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Baywatch</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+Lorsqu'une vague de crime frappe la plage, Mitch Buchannon (Dwayne Johnson) dirige l'équipe de sauveteurs, dont la recrue d'élite Matt Brody (Zac Efron), pour une mission afin de prouver qu'un badge n'est pas nécessaire pour protéger la baie.<br>
+Réalisateurs:	Seth Gordon<br>
+Acteurs principaux:	Dwayne Johnson, Zac Efron, Alexandra Daddario<br>
+Genres:	Comédie<br>
+Sous-titres:    Français (France), English<br>
+Audio:	Français , English
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="formu" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Formulaire d'inscription</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="Programme">Programme Préferer:</label>
+                <select id="Programme" name="Programme">
+                  <option value="Serie">Serie</option>
+                  <option value="Film">Film</option>
+                  <option value="Enfant">Enfant</option>
+                  <option value="PAO">Programme Amazon Original</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+    function evenementCapture() {
+      var x = document.getElementById("demo");
+      var y = document.getElementById("titre");
+      y.style.display = "none";
+      document.getElementById("demo").innerHTML = "<p style='color:white;'>Je suis <br>Yassine !</p>";
+      document.getElementById("demo2").innerHTML = "";
+      // x.style.fontSize = "25px"; 
+      // x.style.color = "red"; 
+      x.style.animation = "modificationCouleur 5s infinite";
+    }
+    
+    function evenementStop() {
+        var x = document.getElementById("demo");
+        document.getElementById("demo2").innerHTML = "Je suis Charlotte !";
+      document.getElementById("demo").innerHTML = "";
+      var y = document.getElementById("titre");
+      y.style.display = "block";
+      // x.style.fontSize = "25px"; 
+      // x.style.color = "red"; 
+      x.style.animation = "modificationCouleur paused";
+    }
+    
+    function evenementCapture2() {
+      var x = document.getElementById("demo2");
+      // x.style.fontSize = "25px"; 
+      // x.style.color = "red"; 
+      x.style.animation = "modificationCouleur 5s infinite";
+    }
+    
+    function evenementStop2() {
+        var x = document.getElementById("demo2");
+      // x.style.fontSize = "25px"; 
+      // x.style.color = "red"; 
+      x.style.animation = "modificationCouleur paused";
+    }
+    </script>
